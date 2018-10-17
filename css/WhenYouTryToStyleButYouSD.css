@@ -1,0 +1,220 @@
+@font-face {
+	font-family: Unica One;
+	src: url(../docs/UnicaOne-Regular.ttf);
+}
+@font-face {
+	font-family: Titillium Web;
+	src: url(../docs/TitilliumWeb-Regular.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: 0;
+}
+body, html {
+	margin: 0;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color:white;
+	-webkit-transition: All 0.25s ease;
+    -moz-transition: All 0.25s ease;
+    -o-transition: All 0.25s ease;
+    -ms-transition: All 0.25s ease;
+
+}
+a:hover, a:focus {
+    text-shadow:0 0 4px #eaeaea;
+}
+h1 {
+	font-family: Unica One, Helvetica, Arial, sans-serif;
+	border-bottom: #FF0004 medium solid;
+	display:inline;
+}
+h2 {
+	 font-size:36px;
+}
+p {
+	font-family: Titillium Web, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+
+}
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+li {
+	padding: 10px;
+	display: inline-block;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 0px 15px;
+
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 100px 50px;
+	min-width: 200px;
+	max-width: 1000px;
+}
+.boxhead {
+	padding-bottom: 20px;
+	float: left;
+	height: 40px;
+	width: 200px;
+}
+.content {
+	float: left;
+	min-width: 200px;
+	max-width: 700px;
+}
+.subcontainer > div {
+	width: 100px; /* Declare your value. Can be in relative units. */
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.button {
+  color: black;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 20px 20px;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: all 0.5s ease 0s;
+}
+.button:hover {
+    background-color: #000000;
+    color: white;
+    text-shadow:none;
+}
+.button2 {
+ 	color: #EAEAEA;
+  	border: 2px solid #FFFFFF;
+}
+.button2:hover {
+    background-color: #EAEAEA;
+    color: black;
+}
+.blueimp-gallery > .description {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  color: #fff;
+  display: none;
+}
+.blueimp-gallery-controls > .description {
+  display: block;
+}
+#logo {
+	font-size: 32px; 
+	float: left; 
+	padding: 0 20px;
+	color: white;
+}
+#topbar {
+	top: -1px;
+	width: 100%;
+	position: -webkit-sticky;
+	position: sticky;
+	font-family: Unica One, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	min-height: 40px;
+	background-color: #1A1A1A;
+	z-index: 1;
+}
+#home, #about, #dev,#photo,#media,#contact {
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#home {
+	background-image: url("../img/home.jpg");
+	background-color: #5F5F5F;
+	min-height: calc(100% - 40px);
+	height: 500px;
+}
+#title {
+	text-align: center;
+	font-family: Unica One, Helvetica, Arial, sans-serif;
+	font-size: 144px;
+	color:#D9D9D9;
+	top: 150px;
+	position: relative;
+	
+}
+#about {
+	background-image: url("../img/about.png");
+	background-repeat: repeat;
+	background-attachment: scroll;
+	min-height: 400px;
+	background-color: #D0D0D0;
+}
+#dev{
+	background-image: url("../img/dev.jpg");
+	background-color: #151515;
+	color: #EDEDED;
+	min-height: 400px;
+}
+#photo{
+	background-color:#3D3D3D;
+	background-image: url("../img/media.jpg");
+	color: white;
+}
+#media, #contact {
+	background-color: #0F0F0F;
+	color: #F3F3F3;
+}
+
+#contact {
+	height: 350px;
+}
+@media (max-width: 1200px) and (max-height: 2000px) and (orientation: portrait){
+	#logo {
+		display:none;
+	}
+	#title {
+		font-size: 36px;
+		font-size: 20vw;
+		top: 120px;
+	}
+	#home {
+		min-height: 600px;
+	}
+	#media {
+		background-image: url("../img/media_mobile.jpg");
+	}
+	#topbar {
+		min-height: 60px;
+		font-size: 20px;
+		font-size: 6vw;
+	}
+	#contact {
+		height: 500px;
+	}
+	iframe {
+		width: 480px;
+	}
+	h1 {
+		font-size: 6vw;
+	}
+	h2 {
+		font-size: 6vw;
+	}
+	li a{
+		padding: 0 0px;
+	}
+	ul {
+		text-align: center;
+	}
+}
