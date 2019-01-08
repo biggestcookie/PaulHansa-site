@@ -1,1 +1,7 @@
 .vscode/
+
+# Glitch files
+shrinkwrap.yaml
+.glitch-assets
+node_modules/
+glitch.json
