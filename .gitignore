@@ -3,5 +3,6 @@
 # Glitch files
 shrinkwrap.yaml
 .glitch-assets
+.git-credentials
 node_modules/
 glitch.json
