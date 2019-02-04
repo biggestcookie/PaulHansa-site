@@ -2,7 +2,7 @@
   "name": "paulhansa-site",
   "description": "A simple build process for LESS compile",
   "scripts": {
-    "build-css": "lessc style.less --clean-css=\"--s1 --advanced --compatibility=ie8\" public/css/style.min.css",
+    "build-css": "lessc style.less --clean-css=\"--s1 --advanced --compatibility=ie8\" css/style.min.css",
     "start": "npm run build-css && node server.js"
   },
   "dependencies": {
