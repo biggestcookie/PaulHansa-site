@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/purecss/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/pure-min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss/build/pure-min.css"
+    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"> -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88940541-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,36 +17,47 @@
     gtag('js', new Date());
     gtag('config', 'UA-88940541-1');
   </script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
+    defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <div class="splash-container">
-    <div class="splash">
-      <h1 class="splash-head">
-        Paul Hansa
-      </h1>
+  <div id="home">
+    <div class="box">
+      Paul Hansa
     </div>
+    <div id="particles"></div>
   </div>
-  <div class="content-wrapper">
-    <div class="content">
-      <h1 class="content-head">
+  <nav id="nav" class="pure-menu pure-menu-horizontal">
+    <a class="pure-menu-heading" href="#">PH</a>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a href="#dev">DEV</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="#media">MEDIA</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="section">
+    <div class="box">
+      <h1 class="boxhead">
         Section
       </h1>
       <div class="pure-g">
-        <div class="pure-u-md-1-2">
-          ex
+        <div class="pure-u-1 pure-u-md-1-2">
+          <h2 class="content-subhead">
+            Subhead
+          </h2>
+          <p>
+            Example text
+          </p>
         </div>
       </div>
     </div>
   </div>
 </body>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800,
-    // offset: 40
-  });
-</script>
 
 </html>
 
