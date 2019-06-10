@@ -1,5 +1,0 @@
-{
-  "restart": {
-    "include": "css/style.min.css"
-  }
-}

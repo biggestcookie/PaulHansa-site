@@ -1,5 +1,7 @@
+<!--🎤 Did you see my bag? 🎤-->
+
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <title>Paul Hansa</title>
@@ -7,9 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="stylesheet" href="css/pure-min.css" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss/build/pure-min.css"
-    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88940541-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,30 +17,40 @@
     gtag('js', new Date());
     gtag('config', 'UA-88940541-1');
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
     defer></script>
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <div id="home">
-    <div class="box">
-      Paul Hansa
+  <div id="home" class="row">
+    <div id="home-box">
+      <h1>Paul Hansa</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
     </div>
     <div id="particles"></div>
   </div>
-  <nav id="nav" class="pure-menu pure-menu-horizontal">
-    <a class="pure-menu-heading" href="#">PH</a>
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item">
-        <a href="#dev">DEV</a>
-      </li>
-      <li class="pure-menu-item">
-        <a href="#media">MEDIA</a>
-      </li>
-    </ul>
+  <nav id="nav" class="top-bar">
+    <a class="top-bar-left" href="#">PH</a>
+    <div class="top-bar-right">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="is-dropdown-submenu-parent">
+          <a href="#dev">DEV</a>
+          <ul class="menu">
+            <li><a href="#software">SOFTWARE</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#media">MEDIA</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <div id="section">
+  <div id="dev" class="row">
     <div class="box">
       <h1 class="boxhead">
         Section
@@ -57,8 +67,11 @@
       </div>
     </div>
   </div>
+  <footer id="footer">
+    <a class="f-logo la la-github" href="https://github.com/biggestcookie" target="_blank"></a>
+  </footer>
 </body>
 
 </html>
 
-<!--🎤 mic drop 🎤-->
+<!--🎤 Mic drop, BAM 🎤-->

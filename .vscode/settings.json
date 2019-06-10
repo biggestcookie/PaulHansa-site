@@ -1,6 +1,12 @@
 {
-    "less.compile": {
-        "compress": true,
-        "out": "css/style.min.css"
-    }
+    "liveSassCompile.settings.includeItems": [
+        "/css/style.scss"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css/"
+        }
+    ]
 }
