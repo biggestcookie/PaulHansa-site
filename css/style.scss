@@ -1,9 +1,15 @@
-@import 'foundation';
 @import url("https://fonts.googleapis.com/css?family=Karla");
 
+$main-theme-color: black;
+$main-font-color: white;
 
 * {
     text-decoration: none;
+}
+
+body {
+    background-color: $main-theme-color;
+    color: $main-font-color;
 }
 
 #nav {
