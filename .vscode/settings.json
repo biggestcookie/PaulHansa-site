@@ -1,7 +1,13 @@
 {
-    "less.compile": {
-        "compress": true,
-        "sourceMap": true,
-        "outExt": ".min.css"
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css/"
     }
+  ],
+  "liveSassCompile.settings.includeItems": ["/sass/main.scss"]
 }

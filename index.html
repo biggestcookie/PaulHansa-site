@@ -6,118 +6,47 @@
 <head>
   <title>Paul Hansa</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation-prototype.min.css">
-  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88940541-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-88940541-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-88940541-1");
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"
-    defer></script>
-  <script src="js/main.js" defer></script>
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
-  <div id="home" class="row">
-    <div id="home-box">
-      <h1>Paul Hansa</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      </p>
-    </div>
-    <div id="particles"></div>
-  </div>
-  <nav id="nav" class="top-bar">
-    <a class="top-bar-left" href="#">PH</a>
-    <div class="top-bar-right">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="is-dropdown-submenu-parent">
-          <a href="#dev">DEV</a>
-          <ul class="menu">
-            <li><a href="#software">SOFTWARE</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#media">MEDIA</a>
-        </li>
-      </ul>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">Logo</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">Link</a>
+        </div>
+      </div>
     </div>
   </nav>
-  <div class="grid-container">
-    <div id="footer" data-sticky-container>
-      <div class="sticky" data-sticky data-stick-to="bottom">
-        <a class="f-logo la la-github" href="https://github.com/biggestcookie" target="_blank"></a>
+  <section class="hero is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">
+        <p class="title">Title</p>
       </div>
     </div>
-    <div id="dev"></div>
-    <div id="software" class="grid-x grid-margin-x">
-      <div class="cell">
-        <h1>
-          Section
-        </h1>
-      </div>
-      <div class="cell">
-        <div class="tabs-content" data-tabs-content="example-tabs">
-          <div class="tabs-panel is-active" id="panel1">
-            1
-          </div>
-          <div class="tabs-panel" id="panel2">
-            2
-          </div>
-        </div>
-        <ul class="tabs" data-tabs id="example-tabs">
-          <li class="tabs-title is-active"><a href="#panel1">Tab 1</a></li>
-          <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-          <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
-        </ul>
-      </div>
+  </section>
+  <footer class="footer">
+    <div class="content">
+      Footer
     </div>
-    <div id="games">
-      <div class="cell">
-        <h1>
-          Section
-        </h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard
-          dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen
-          book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-          essentially
-          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more
-          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-          literature
-          from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-          Virginia,
-          looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
-          cites of
-          the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
-          and 1.10.33
-          of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-          treatise
-          on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
-          dolor sit
-          amet..", comes from a line in section 1.10.32.
-        </p>
-      </div>
-    </div>
-  </div>
-
+  </footer>
 </body>
 
 </html>
-
 <!--🎤 Mic drop, BAM 🎤-->
