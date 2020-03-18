@@ -18,7 +18,10 @@
     gtag("js", new Date());
     gtag("config", "UA-88940541-1");
   </script>
-  <script type="module" src="js/main.js"></script>
+  <script defer src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="js/stimulus.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -38,6 +41,9 @@
     <div class="hero-body">
       <div class="container">
         <p class="title">Title</p>
+        <div data-controller="github">
+          <a data-action="click -> github#greet">click</a>
+        </div>
       </div>
     </div>
   </section>
