@@ -11,6 +11,6 @@ class StimulusApplication {
 
 class GithubController extends Stimulus.Controller {
   greet() {
-    console.log("hi");
+    alert("hi");
   }
 }

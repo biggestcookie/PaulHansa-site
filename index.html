@@ -18,8 +18,8 @@
     gtag("js", new Date());
     gtag("config", "UA-88940541-1");
   </script>
-  <script defer src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
-  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="js/packages/axios.min.js"></script>
+  <script defer src="js/packages/stimulus.umd.js"></script>
   <script defer src="js/stimulus.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -38,15 +38,14 @@
     </div>
   </nav>
   <section class="section">
-        <div data-controller="github">
-          
-        </div>
+    <div data-controller="github">
+      <a data-action="click -> github#greet">clk</a>
+    </div>
   </section>
   <section class="hero is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">
-        <p class="title">Title</p>ata-action="click -> github#greet">click</a>
-        </div>
+        <p class="title">Title</p>
       </div>
     </div>
   </section>
