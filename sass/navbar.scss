@@ -1,0 +1,14 @@
+nav {
+  background: red;
+
+  .dots span {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid $blue;
+    display: inline-block;
+    &:nth-child(1) {
+      background-color: red;
+    }
+  }
+}

@@ -25,10 +25,12 @@
 </head>
 
 <body>
-  <nav class="navbar">
+  <nav class="navbar has-background-white-ter">
     <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">Logo</a>
+      <div class="navbar-brand dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
@@ -46,6 +48,9 @@
     <div class="hero-body">
       <div class="container">
         <p class="title">Title</p>
+        <div data-controller="github">
+          <a class="is-family-monospace" data-action="click -> github#greet">click</a>
+        </div>
       </div>
     </div>
   </section>
