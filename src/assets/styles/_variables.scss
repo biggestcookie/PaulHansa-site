@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+/* Fonts */
+$family-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif;
+$family-monospace: "Fira Code";
+$family-secondary: $family-monospace;
+
+/* Colors */
+// $primary: $red;
+// $title-color: $white;
+// $body-color: $white;
+// $body-background-color: #2b2d42;
+
+@import "~bulma/bulma";
