@@ -9,3 +9,9 @@
     </div>
   </section>
 </template>
+
+<style lang="scss">
+section {
+  background: red;
+}
+</style>

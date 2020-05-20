@@ -1,0 +1,54 @@
+<template>
+  <div id="sidebar">
+    <aside id="activity-bar" class="is-hidden-mobile">
+      <img src="../assets/img/file.svg" />
+      <img src="../assets/img/search.svg" />
+      <img src="../assets/img/extensions.svg" />
+      <img src="../assets/img/settings.svg" />
+    </aside>
+    <!-- <aside id="numbers">test</aside> -->
+  </div>
+</template>
+
+<style lang="scss">
+#sidebar {
+  display: inline-block;
+  height: 100%;
+  #activity-bar {
+    width: 3rem;
+    height: 100%;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    img {
+      padding: 1rem 0;
+      &:nth-child(4) {
+        position: absolute;
+        bottom: 1rem;
+        left: 0.75rem;
+        @include mobile {
+          left: 0rem;
+        }
+      }
+    }
+  }
+}
+
+// #numbers {
+// top: 6rem;
+// position: absolute;
+// left: 3rem;
+// @include mobile {
+//   top: 4.5rem;
+
+//   left: 0;
+// }
+// }
+</style>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component
+export default class Sidebar extends Vue {}
+</script>

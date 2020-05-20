@@ -7,9 +7,12 @@ $family-monospace: "Fira Code";
 $family-secondary: $family-monospace;
 
 /* Colors */
-// $primary: $red;
+$grey-lightest: hsl(0, 0%, 93%);
+$primary: $grey-lightest;
 // $title-color: $white;
 // $body-color: $white;
 // $body-background-color: #2b2d42;
+
+$navbar-height: 2.25rem;
 
 @import "~bulma/bulma";
