@@ -25,21 +25,27 @@
       "detail": "vue-cli-service serve",
       "type": "npm",
       "script": "serve",
-      "problemMatcher": []
+      "problemMatcher": "$tsc",
     },
     {
       "label": "Git merge dev into master",
+      "detail": "git fetch origin dev:master; git push origin master:master",
       "type": "shell",
       "problemMatcher": [],
       "command": "git fetch origin dev:master; git push origin master:master"
     },
     {
-      "label": "Serve Production Build",
+      "label": "NPM Serve Production Build",
       "type": "shell",
-      "command": "serve",
-      "args": ["-s", "dist"],
-      "dependsOn": ["NPM Build"],
-      "problemMatcher": []
+      "command": "npm serve",
+      "args": [
+        "-s",
+        "dist"
+      ],
+      "dependsOn": [
+        "NPM Build"
+      ],
+      "problemMatcher": "$tsc",
     }
   ]
 }

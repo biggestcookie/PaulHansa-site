@@ -33,17 +33,6 @@
     }
   }
 }
-
-// #numbers {
-// top: 6rem;
-// position: absolute;
-// left: 3rem;
-// @include mobile {
-//   top: 4.5rem;
-
-//   left: 0;
-// }
-// }
 </style>
 
 <script lang="ts">

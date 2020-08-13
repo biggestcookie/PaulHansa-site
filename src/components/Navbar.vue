@@ -6,22 +6,27 @@
       </div>
     </div>
     <div class="navbar-menu">
-      <div class="navbar-item">
-        <a
-          href="https://drive.google.com/open?id=1g0e5bwXMcL99mGFxBjeWgSDGMIU5O7ir"
-          target="_blank"
-        >
-          Resume</a
-        >
-      </div>
-      <div class="navbar-item">
-        <a href="mailto:contact@paulhansa.com" target="_blank">Contact</a>
-      </div>
-      <div class="navbar-item">
-        <a href="https://www.linkedin.com/in/paulhansa/" target="_blank"
-          >LinkedIn</a
-        >
-      </div>
+      <a
+        class="navbar-item"
+        href="https://drive.google.com/open?id=1g0e5bwXMcL99mGFxBjeWgSDGMIU5O7ir"
+        target="_blank"
+      >
+        Resume</a
+      >
+      <a
+        class="navbar-item"
+        href="mailto:contact@paulhansa.com"
+        target="_blank"
+      >
+        Contact
+      </a>
+      <a
+        class="navbar-item"
+        href="https://www.linkedin.com/in/paulhansa/"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
     </div>
     <div class="navbar-center">
       <div class="navbar-item is-size-7">

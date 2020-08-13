@@ -47,7 +47,7 @@
       }
     }
     &:hover {
-      background: none;
+      background: $grey-lighter;
     }
   }
   @include mobile {
