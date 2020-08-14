@@ -40,7 +40,7 @@
       }
     }
     &:hover {
-      background: $white-ter;
+      background: $grey-lighter;
     }
   }
   @include mobile {
