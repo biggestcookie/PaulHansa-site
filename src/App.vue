@@ -6,7 +6,10 @@
       <div id="right-pane">
         <tabs />
         <div id="window">
-          <router-view />
+          <div id="viewport">
+            <line-count />
+            <router-view />
+          </div>
         </div>
       </div>
     </div>
@@ -17,10 +20,11 @@
 <style lang="scss">
 body,
 html {
-  height: 100%;
   overflow: hidden;
+  height: 100%;
 }
 #app {
+  position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -41,6 +45,74 @@ html {
       height: 100%;
       flex: 1;
       overflow-y: scroll;
+      #viewport {
+        position: relative;
+        overflow: hidden;
+        section {
+          margin-left: 4rem;
+          @include mobile {
+            margin-left: 2rem;
+          }
+          h1,
+          h2,
+          h3,
+          h4 {
+            text-transform: uppercase;
+          }
+
+          .orange {
+            color: $orange;
+          }
+
+          .cyan {
+            color: $cyan;
+          }
+
+          .blue {
+            color: $blue;
+          }
+
+          .gray {
+            color: $grey;
+          }
+
+          .grayed {
+            opacity: 0.6;
+            font-size: 0.8em;
+          }
+
+          .overflow {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            // color: $grey-lighter;
+          }
+
+          .column {
+            .content-block {
+              margin-bottom: 5rem;
+              .indent {
+                margin: 0 2em;
+                display: block;
+              }
+              .content {
+                margin-top: 1rem;
+              }
+            }
+          }
+          @include mobile {
+            .column .content-block .indent {
+              margin: 0 1em;
+              .content {
+                margin-top: 0.5em;
+              }
+            }
+            p {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -48,6 +120,7 @@ html {
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import LineCount from "@/components/Linecount.vue";
 import Navbar from "@/components/Navbar.vue";
 import Sidebar from "@/components/Sidebar.vue";
 import Tabs from "@/components/Tabs.vue";
@@ -55,6 +128,7 @@ import Statusbar from "@/components/Statusbar.vue";
 
 @Component({
   components: {
+    LineCount,
     Navbar,
     Sidebar,
     Statusbar,

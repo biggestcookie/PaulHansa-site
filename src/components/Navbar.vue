@@ -11,16 +11,19 @@
           href="https://drive.google.com/open?id=1g0e5bwXMcL99mGFxBjeWgSDGMIU5O7ir"
           target="_blank"
         >
-          Resume</a
-        >
+          Resume
+        </a>
       </div>
       <div class="navbar-item">
         <a href="mailto:contact@paulhansa.com" target="_blank">Contact</a>
       </div>
       <div class="navbar-item">
-        <a href="https://www.linkedin.com/in/paulhansa/" target="_blank"
-          >LinkedIn</a
-        >
+        <a href="https://github.com/biggestcookie" target="_blank">Github</a>
+      </div>
+      <div class="navbar-item">
+        <a href="https://www.linkedin.com/in/paulhansa" target="_blank">
+          LinkedIn
+        </a>
       </div>
     </div>
     <div class="navbar-center">
@@ -33,25 +36,26 @@
 
 <style lang="scss">
 #navbar-main {
+  display: flex;
   .navbar-brand {
-    // position: fixed;
-    margin-left: 0.25rem;
+    width: 3rem;
     img {
+      margin-left: 0.25rem;
       width: 16px;
       height: 16px;
     }
   }
 
   .navbar-menu {
-    position: fixed;
+    z-index: 1;
     font-size: 0.8rem;
-    margin-left: 3rem;
     .navbar-item:hover {
       background-color: $grey-lighter;
     }
   }
 
   .navbar-center {
+    position: absolute;
     align-items: stretch;
     display: flex;
     justify-content: center;

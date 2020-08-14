@@ -2,7 +2,7 @@
   <footer class="is-size-7">
     <a
       id="forks"
-      href="https://github.com/biggestcookie?tab=repositories"
+      href="https://github.com/biggestcookie/paulhansa-site"
       target="_blank"
     >
       <img src="../assets/img/fork.svg" />
@@ -11,6 +11,7 @@
       {{ stars }}
     </a>
     <div id="info">
+      <span>Spaces: 4</span>
       <span>UTF-8</span>
       <span>LF</span>
       <span>Vue</span>
@@ -56,12 +57,28 @@ footer {
 
   #info {
     align-self: flex-end;
-    padding-right: 0.5rem;
+    padding-right: 0.25rem;
     img {
       width: 1rem;
       margin-left: 1rem;
     }
   }
+
+  .destination h2 {
+    color: red;
+  }
+
+  h2.destination {
+    color: red;
+  }
+}
+
+.class1 .class2 {
+  color: red;
+}
+
+.class1.class2 {
+  color: red;
 }
 </style>
 

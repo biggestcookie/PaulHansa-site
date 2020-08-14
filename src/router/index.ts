@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import Projects from "../views/Projects.vue";
 
 Vue.use(VueRouter);
 
@@ -12,16 +12,19 @@ export const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About.vue",
-    component: About
+    path: "/projects",
+    name: "Projects.vue",
+    component: Projects
   }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 });
 
 export default router;
