@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "NPM Build",
+      "label": "npm: build",
       "detail": "vue-cli-service build",
       "type": "npm",
       "script": "build",
@@ -21,21 +21,15 @@
       }
     },
     {
-      "label": "NPM Serve",
+      "label": "npm: serve",
       "detail": "vue-cli-service serve",
       "type": "npm",
       "script": "serve",
       "problemMatcher": "$tsc",
     },
     {
-      "label": "Git merge dev into master",
-      "detail": "git fetch origin dev:master; git push origin master:master",
-      "type": "shell",
-      "problemMatcher": [],
-      "command": "git fetch origin dev:master; git push origin master:master"
-    },
-    {
-      "label": "NPM Serve Production Build",
+      "label": "npm: serve production",
+      "detail": "vue-cli-service serve -s dist",
       "type": "shell",
       "command": "npm serve",
       "args": [
@@ -43,7 +37,7 @@
         "dist"
       ],
       "dependsOn": [
-        "NPM Build"
+        "npm: build"
       ],
       "problemMatcher": "$tsc",
     }
