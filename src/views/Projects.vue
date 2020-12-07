@@ -34,7 +34,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Vue } from "vue-class-component";
 
 interface Project {
   name: string;
@@ -42,26 +42,25 @@ interface Project {
   url: string;
 }
 
-@Component
 export default class Projects extends Vue {
   private projects: Project[] = [];
 
-  private mounted() {
-    this.$http
-      .get("https://api.github.com/users/biggestcookie/repos", {
-        params: {
-          sort: "updated"
-        }
-      })
-      .then(res => {
-        res.data.map((project: any) => {
-          this.projects.push({
-            name: project.name,
-            description: project.description,
-            url: project.html_url
-          });
-        });
-      });
+  mounted() {
+    // this.$http
+    //   .get("https://api.github.com/users/biggestcookie/repos", {
+    //     params: {
+    //       sort: "updated"
+    //     }
+    //   })
+    //   .then(res => {
+    //     res.data.map((project: any) => {
+    //       this.projects.push({
+    //         name: project.name,
+    //         description: project.description,
+    //         url: project.html_url
+    //       });
+    //     });
+    //   });
   }
 }
 </script>

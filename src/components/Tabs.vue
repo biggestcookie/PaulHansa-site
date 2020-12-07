@@ -69,10 +69,9 @@
 </style>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { routes } from "@/router/index";
+import { Vue } from "vue-class-component";
+import { routes } from "/@/router/index";
 
-@Component
 export default class Tabs extends Vue {
   private routes = routes;
 }

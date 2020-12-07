@@ -1,11 +1,7 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
-import Projects from "../views/Projects.vue";
 
-Vue.use(VueRouter);
-
-export const routes: Array<RouteConfig> = [
+export const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "Home.vue",
@@ -14,17 +10,23 @@ export const routes: Array<RouteConfig> = [
   {
     path: "/projects",
     name: "Projects.vue",
-    component: Projects
+    component: () => import("../views/Projects.vue")
   }
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior () {
-    return { x: 0, y: 0 }
-  }
+  scrollBehavior: () => ({ top: 0, left: 0 })
 });
+
+// new VueRouter({
+//   mode: "history",
+//   base: process.env.BASE_URL,
+//   routes,
+//   scrollBehavior () {
+//     return { x: 0, y: 0 }
+//   }
+// });
 
 export default router;

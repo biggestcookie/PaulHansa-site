@@ -1,45 +1,45 @@
 {
   "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "npm: build",
-      "detail": "vue-cli-service build",
-      "type": "npm",
-      "script": "build",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": "$tsc",
-      "presentation": {
-        "echo": true,
-        "reveal": "silent",
-        "focus": false,
-        "panel": "shared",
-        "showReuseMessage": true,
-        "clear": false
-      }
-    },
-    {
-      "label": "npm: serve",
-      "detail": "vue-cli-service serve",
-      "type": "npm",
-      "script": "serve",
-      "problemMatcher": "$tsc",
-    },
-    {
-      "label": "npm: serve production",
-      "detail": "vue-cli-service serve -s dist",
-      "type": "shell",
-      "command": "npm serve",
-      "args": [
-        "-s",
-        "dist"
-      ],
-      "dependsOn": [
-        "npm: build"
-      ],
-      "problemMatcher": "$tsc",
-    }
-  ]
+  // "tasks": [
+  //   {
+  //     "label": "npm: build",
+  //     "detail": "vue-cli-service build",
+  //     "type": "npm",
+  //     "script": "build",
+  //     "group": {
+  //       "kind": "build",
+  //       "isDefault": true
+  //     },
+  //     "problemMatcher": "$tsc",
+  //     "presentation": {
+  //       "echo": true,
+  //       "reveal": "silent",
+  //       "focus": false,
+  //       "panel": "shared",
+  //       "showReuseMessage": true,
+  //       "clear": false
+  //     }
+  //   },
+  //   {
+  //     "label": "npm: serve",
+  //     "detail": "vue-cli-service serve",
+  //     "type": "npm",
+  //     "script": "serve",
+  //     "problemMatcher": "$tsc",
+  //   },
+  //   {
+  //     "label": "npm: serve production",
+  //     "detail": "vue-cli-service serve -s dist",
+  //     "type": "shell",
+  //     "command": "npm serve",
+  //     "args": [
+  //       "-s",
+  //       "dist"
+  //     ],
+  //     "dependsOn": [
+  //       "npm: build"
+  //     ],
+  //     "problemMatcher": "$tsc",
+  //   }
+  // ]
 }

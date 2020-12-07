@@ -83,20 +83,19 @@ footer {
 </style>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Vue } from "vue-class-component";
 
-@Component
 export default class Statusbar extends Vue {
   private forks = 0;
   private stars = 0;
 
-  private mounted() {
-    this.$http
-      .get("https://api.github.com/repos/biggestcookie/paulhansa-site")
-      .then(res => {
-        this.forks = res.data["forks_count"];
-        this.stars = res.data["stargazers_count"];
-      });
+  mounted() {
+    // this.$http
+    //   .get("https://api.github.com/repos/biggestcookie/paulhansa-site")
+    //   .then(res => {
+    //     this.forks = res.data["forks_count"];
+    //     this.stars = res.data["stargazers_count"];
+    //   });
   }
 }
 </script>

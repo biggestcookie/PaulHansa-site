@@ -1,20 +1,18 @@
 <template>
-  <div id="app">
-    <navbar />
-    <div id="main">
-      <sidebar />
-      <div id="right-pane">
-        <tabs />
-        <div id="window">
-          <div id="viewport">
-            <line-count />
-            <router-view />
-          </div>
+  <navbar />
+  <div id="main">
+    <sidebar />
+    <div id="right-pane">
+      <tabs />
+      <div id="window">
+        <div id="viewport">
+          <line-count />
+          <router-view />
         </div>
       </div>
     </div>
-    <statusbar />
   </div>
+  <statusbar />
 </template>
 
 <style lang="scss">
@@ -119,14 +117,14 @@ html {
 </style>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import LineCount from "@/components/Linecount.vue";
-import Navbar from "@/components/Navbar.vue";
-import Sidebar from "@/components/Sidebar.vue";
-import Tabs from "@/components/Tabs.vue";
-import Statusbar from "@/components/Statusbar.vue";
+import { Options, Vue } from "vue-class-component";
+import LineCount from "/@/components/Linecount.vue";
+import Navbar from "/@/components/Navbar.vue";
+import Sidebar from "/@/components/Sidebar.vue";
+import Statusbar from "/@/components/Statusbar.vue";
+import Tabs from "/@/components/Tabs.vue";
 
-@Component({
+@Options({
   components: {
     LineCount,
     Navbar,

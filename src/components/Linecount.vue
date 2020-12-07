@@ -30,9 +30,8 @@
 </style>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Vue } from "vue-class-component";
 
-@Component
 export default class LineCount extends Vue {
   lineCount = new Array(100);
 }
