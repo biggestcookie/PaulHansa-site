@@ -7,14 +7,13 @@
         :to="route.path"
         class="navbar-item"
       >
-        <img src="../assets/img/code.svg" />
+        <img src="../assets/img/vue.svg" />
         <span>{{ route.name }}</span>
       </router-link>
     </nav>
     <div id="breadcrumbs" class="is-hidden-mobile">
-      paulhansa-site > src > <img src="../assets/img/code.svg" />{{
-        $route.name
-      }}
+      paulhansa-site > src >
+      <img src="../assets/img/vue.svg" />{{ $route.name }}
     </div>
   </div>
 </template>
@@ -61,8 +60,7 @@
   z-index: 2;
 
   img {
-    width: 1rem;
-    object-position: 0 0.2rem;
+    width: 0.75rem;
     margin-right: 0.15rem;
   }
 }

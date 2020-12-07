@@ -14,7 +14,7 @@
       <span>Spaces: 4</span>
       <span>UTF-8</span>
       <span>LF</span>
-      <span>Vue</span>
+      <a href="https://v3.vuejs.org/" target="_blank">Vue</a>
       <img src="../assets/img/bell.svg" />
     </div>
   </footer>
