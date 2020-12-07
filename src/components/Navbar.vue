@@ -29,7 +29,7 @@
       </a>
       <a
         class="navbar-item"
-        href="https://www.linkedin.com/in/paulhansa/"
+        href="https://www.linkedin.com/in/phansa/"
         target="_blank"
       >
         LinkedIn
