@@ -46,21 +46,21 @@ export default class Projects extends Vue {
   private projects: Project[] = [];
 
   mounted() {
-    // this.$http
-    //   .get("https://api.github.com/users/biggestcookie/repos", {
-    //     params: {
-    //       sort: "updated"
-    //     }
-    //   })
-    //   .then(res => {
-    //     res.data.map((project: any) => {
-    //       this.projects.push({
-    //         name: project.name,
-    //         description: project.description,
-    //         url: project.html_url
-    //       });
-    //     });
-    //   });
+    this.$http
+      .get("https://api.github.com/users/biggestcookie/repos", {
+        params: {
+          sort: "updated"
+        }
+      })
+      .then(res => {
+        res.data.map((project: any) => {
+          this.projects.push({
+            name: project.name,
+            description: project.description,
+            url: project.html_url
+          });
+        });
+      });
   }
 }
 </script>

@@ -20,13 +20,4 @@ const router = createRouter({
   scrollBehavior: () => ({ top: 0, left: 0 })
 });
 
-// new VueRouter({
-//   mode: "history",
-//   base: process.env.BASE_URL,
-//   routes,
-//   scrollBehavior () {
-//     return { x: 0, y: 0 }
-//   }
-// });
-
 export default router;

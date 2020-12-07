@@ -45,6 +45,7 @@ html {
       overflow-y: scroll;
       #viewport {
         position: relative;
+        min-height: 100%;
         overflow: hidden;
         section {
           margin-left: 4rem;

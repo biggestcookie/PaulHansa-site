@@ -22,6 +22,7 @@
 
 <style lang="scss">
 footer {
+  z-index: 1;
   flex: 2;
   background-color: $primary;
   color: $grey;
@@ -90,12 +91,12 @@ export default class Statusbar extends Vue {
   private stars = 0;
 
   mounted() {
-    // this.$http
-    //   .get("https://api.github.com/repos/biggestcookie/paulhansa-site")
-    //   .then(res => {
-    //     this.forks = res.data["forks_count"];
-    //     this.stars = res.data["stargazers_count"];
-    //   });
+    this.$http
+      .get("https://api.github.com/repos/biggestcookie/paulhansa-site")
+      .then(res => {
+        this.forks = res.data["forks_count"];
+        this.stars = res.data["stargazers_count"];
+      });
   }
 }
 </script>

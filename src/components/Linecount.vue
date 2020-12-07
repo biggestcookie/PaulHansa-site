@@ -13,8 +13,7 @@
 <style lang="scss">
 #line-count {
   position: absolute;
-  top: 0;
-  left: 0;
+  overflow: hidden;
   background: $white;
   opacity: 0.6;
   width: 4rem;
