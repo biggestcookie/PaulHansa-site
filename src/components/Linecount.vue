@@ -1,6 +1,10 @@
 <template>
   <div id="line-count">
-    <div v-for="(line, index) in lineCount" :key="index" class="line-number">
+    <div
+      v-for="(line, index) in new Array(100)"
+      :key="index"
+      class="line-number"
+    >
       <span class="is-family-monospace">{{ index + 1 }}</span>
     </div>
   </div>
@@ -30,9 +34,9 @@
 </style>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
+// import { Vue } from "vue-class-component";
 
-export default class LineCount extends Vue {
-  lineCount = new Array(100);
-}
+// export default class LineCount extends Vue {
+//   // lineCount = new Array(100);
+// }
 </script>
