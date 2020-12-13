@@ -48,6 +48,25 @@
                       </a>
                     </div>
                   </div>
+                  <h4 class="has-text-centered has-text-grey-light mt-6">
+                    Some more of my projects:
+                  </h4>
+                  <div class="links is-flex">
+                    <a
+                      href="https://github.com/biggestcookie"
+                      target="_blank"
+                      class="button is-uppercase"
+                    >
+                      GitHub
+                    </a>
+                    <a
+                      href="https://glitch.com/@bigcookie"
+                      target="_blank"
+                      class="button is-uppercase"
+                    >
+                      Glitch
+                    </a>
+                  </div>
                 </div>
                 <span class="grayed gray">);</span>
               </div>

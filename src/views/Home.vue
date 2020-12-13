@@ -64,13 +64,15 @@
 <style lang="scss">
 .content {
   .links {
-    width: 100%;
+    margin: 0 auto;
+    width: 75%;
     justify-content: space-around;
     margin-bottom: 2em;
     .button {
       min-width: 120px;
     }
     @include mobile {
+      width: 100%;
       justify-content: space-between;
       .button {
         min-width: inherit;
