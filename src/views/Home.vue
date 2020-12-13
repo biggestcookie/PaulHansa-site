@@ -65,7 +65,17 @@
 .content {
   .links {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    .button {
+      min-width: 120px;
+    }
+    @include mobile {
+      justify-content: space-between;
+      .button {
+        min-width: inherit;
+      }
+    }
   }
 }
 </style>

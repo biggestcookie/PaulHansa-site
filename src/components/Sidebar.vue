@@ -15,14 +15,11 @@
   display: flex;
   flex-direction: column;
   img {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     &:nth-child(4) {
       position: absolute;
       bottom: 1rem;
-      left: 0.75rem;
-      @include mobile {
-        left: 0rem;
-      }
+      left: 0.25rem;
     }
   }
 }
