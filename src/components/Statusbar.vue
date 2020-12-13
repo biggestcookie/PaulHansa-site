@@ -42,6 +42,7 @@ footer {
   a {
     color: $grey;
     &:hover {
+      color: $white;
       text-decoration: underline;
     }
   }
@@ -90,13 +91,12 @@ export default class Statusbar extends Vue {
   private forks = 0;
   private stars = 0;
 
-  mounted() {
-    this.$http
-      .get("https://api.github.com/repos/biggestcookie/paulhansa-site")
-      .then(res => {
-        this.forks = res.data["forks_count"];
-        this.stars = res.data["stargazers_count"];
-      });
+  async mounted() {
+    const res = await this.$http.get(
+      "https://api.github.com/repos/biggestcookie/paulhansa-site"
+    );
+    this.forks = res.data["forks_count"];
+    this.stars = res.data["stargazers_count"];
   }
 }
 </script>

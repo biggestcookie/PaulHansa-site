@@ -20,6 +20,8 @@ body,
 html {
   overflow: hidden;
   height: 100%;
+  transition: 0.5s all ease;
+  background: $background;
 }
 #app {
   position: relative;
@@ -31,7 +33,6 @@ html {
   display: flex;
   height: 100%;
   overflow: hidden;
-
   #right-pane {
     width: 100%;
     display: flex;
@@ -89,7 +90,7 @@ html {
 
           .column {
             .content-block {
-              margin-bottom: 5rem;
+              margin-bottom: 3rem;
               .indent {
                 margin: 0 2em;
                 display: block;
@@ -113,6 +114,15 @@ html {
         }
       }
     }
+  }
+}
+.button {
+  border-radius: 0 !important;
+  background: none !important;
+  border: 1px solid $grey !important;
+  color: $grey-lighter !important;
+  &:hover {
+    color: $white !important;
   }
 }
 </style>

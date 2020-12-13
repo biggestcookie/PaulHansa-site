@@ -14,7 +14,7 @@
                 <span class="grayed">return ```</span>
                 <div class="content indent">
                   <h2 class="title has-text-info">Paul Hansa</h2>
-                  <h5>
+                  <h5 class="has-text-grey-lighter">
                     Software Engineer
                   </h5>
                 </div>
@@ -31,19 +31,24 @@
               <div class="indent">
                 <span class="grayed">return ```</span>
                 <div class="content indent">
-                  <h4 class="title has-text-info">About</h4>
+                  <h4 class="title has-text-info">Hey there!</h4>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    I'm Paul, a software engineer based in Atlanta, GA. <br />
+                    I specialize in building apps for the web, harnessing a deep
+                    understanding of user experience and accessible design.
                   </p>
+                  <div class="links is-flex">
+                    <router-link to="/dev" class="button is-uppercase">
+                      Dev work
+                    </router-link>
+                    <a
+                      href="https://drive.google.com/open?id=1g0e5bwXMcL99mGFxBjeWgSDGMIU5O7ir"
+                      target="_blank"
+                      class="button is-uppercase"
+                    >
+                      Resume
+                    </a>
+                  </div>
                 </div>
                 <span class="grayed">```</span>
               </div>
@@ -55,3 +60,12 @@
     </div>
   </section>
 </template>
+
+<style lang="scss">
+.content {
+  .links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+</style>

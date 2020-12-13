@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav id="tabs" class="navbar  is-primary">
+    <nav id="tabs" class="navbar has-background-primary">
       <router-link
         v-for="route in routes"
         :key="route.name"
@@ -11,7 +11,7 @@
         <span>{{ route.name }}</span>
       </router-link>
     </nav>
-    <div id="breadcrumbs" class="is-hidden-mobile">
+    <div id="breadcrumbs" class="is-hidden-mobile has-background-grey-darker">
       paulhansa-site > src >
       <img src="../assets/img/vue.svg" />{{ $route.name }}
     </div>
@@ -32,14 +32,15 @@
       margin-right: 0.5rem;
     }
     &.router-link-exact-active {
-      background-color: $white-bis;
-      color: $black;
+      background-color: $grey-darker;
+      color: $white;
       &:hover {
-        background: $white-bis;
+        background: $grey-darker;
       }
     }
     &:hover {
-      background: $grey-lighter;
+      background: $grey-darker;
+      color: $white;
     }
   }
   @include mobile {
@@ -71,6 +72,6 @@ import { Vue } from "vue-class-component";
 import { routes } from "/@/router/index";
 
 export default class Tabs extends Vue {
-  private routes = routes;
+  private routes = routes.filter(route => !!route.name);
 }
 </script>

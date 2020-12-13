@@ -7,11 +7,13 @@ $family-monospace: "Fira Code";
 $family-secondary: $family-monospace;
 
 /* Colors */
-$grey-lightest: hsl(0, 0%, 93%);
-$primary: $grey-lightest;
-// $title-color: $white;
-// $body-color: $white;
-// $body-background-color: #2b2d42;
+$black-ter: hsl(0, 0%, 13%);
+$black-bis: hsl(0, 0%, 11%);
+$grey-lighter: hsl(0, 0%, 86%);
+
+$primary: $black-bis;
+$background: $black-ter;
+$text: $grey-lighter;
 
 $navbar-height: 2.25rem;
 
