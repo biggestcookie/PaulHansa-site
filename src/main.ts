@@ -4,9 +4,10 @@ import VueAxios from "vue-axios";
 import App from "./App.vue";
 import router from "./router";
 
-const app = createApp(App);
+const app = createApp(App)
+  .use(router)
+  .use(VueAxios, axios);
 
-app.use(router);
-app.use(VueAxios, axios);
-
-app.mount("#app");
+router.isReady().then(() => {
+  app.mount("#app");
+});
